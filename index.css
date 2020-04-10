@@ -1,0 +1,416 @@
+/*
+Font family & src
+*/
+@font-face {
+  font-family: ArchivoBlack;
+  src: url(font/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+font-family: DancingScript;
+src: url(font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+font-family: KaushanScript;
+src: url(font/KaushanScript-Regular.ttf);
+}
+@font-face {
+font-family: ZhiMangXing;
+src: url(font/ZhiMangXing-Regular.ttf);
+}
+@font-face {
+font-family: PlayfairDisplay;
+src: url(font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: CaveatBold;
+  src: url(font/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: CaveatRegular;
+  src: url(font/Caveat-Regular.ttf);
+}
+
+/*
+Design généraux & couleurs liens
+*/
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+footer, header, nav, section {
+  display: block;
+}
+section {
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  height: 100%;
+}
+
+a {
+  color: #fdcb46;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #d6ae3f;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fill-height {
+  display: table;
+  width: 100%;
+  height: 500px;
+}
+.container-fill-height .container-content-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.contenu {
+  width: 80%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/*
+Font et couleurs Background
+*/
+/* DESIGN OHMYFOOD - SIZE - FONT */
+.bg-ohmyfood {
+  background-color: #579c87;
+}
+.font-ohmyfood {
+  font-family: ArchivoBlack;
+}
+
+/* DESIGN LA NOTE ENCHANTEE - SIZE - FONT */
+.bg-ne {
+  background-color: #FCDFDB;
+}
+.font-note-enchantee {
+  font-family: ZhiMangXing;
+  color: #3d1319;
+}
+.fas {
+  background: -webkit-linear-gradient(left, #f05861 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
+}
+.caveat-r {
+  font-family: CaveatRegular;
+  font-size: 1.5rem;
+}
+.caveat-b {
+  font-family: CaveatBold;
+  font-size: 1.5rem;
+}
+
+/* DESIGN LE CHIC A LA FRANCAISE - SIZE - FONT */
+.bg-cf {
+  background-color: #FFF5FE;
+}
+.font-chic-francaise {
+  font-family: PlayfairDisplay;
+}
+.ch-color{
+  background: -webkit-linear-gradient(left, #e0881d 0%, #8f5aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
+}
+.ch-menu-color{
+  color: #c77412;
+}
+.contenu-cf-2 {
+  color: #3068e0;
+}
+.contenu-cf-3 {
+  color: #8f5aff;
+}
+.ch-size {
+  font-size: 1.5rem;
+}
+/* DESIGN LE DELICE DES PAPILLES - SIZE - FONT */
+.bg-dp {
+  background-color: #F9F9F9;
+}
+.font-delice-papilles {
+  font-family: DancingScript;
+}
+.dp-color{
+  background: -webkit-linear-gradient(left, #0229dd 0%, #0889fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
+}
+.dp-menu-color{
+  color: #0889fb;
+}
+/* DESIGN LA PALETTE DU GOÛT - SIZE - FONT */
+.bg-pg {
+  background-color: #FDFFFD;
+}
+.font-palette-gout {
+  font-family: KaushanScript;
+}
+.pg-color{
+  background: -webkit-linear-gradient(left, #3e923a 0%, #beff7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
+}
+.pg-menu-color{
+  color: #3e923e;
+}
+
+/*
+
+*/
+.display-size-lg {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display-size-md{
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+
+.col-md-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+.col-md-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.col-md-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-md-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+.col-md-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.col-md-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.col-md-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+.col-md-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fdcb46;
+  background-color: #579c87;
+}
+
+.btn-primary:hover {
+  color: #ffd96f;
+  background-color: #3f7263;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #ffd96f;
+  background-color: #3f7263;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav-link {
+  display: block;
+  padding: 1rem 1rem;
+}
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  margin: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.card-effect {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.card-effect:hover {
+  transform: scale(1.015);
+  transition: transform 300ms;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+}
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.card-title {
+  font-size :2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+}
+
+.card-page {
+  height: auto !important;
+  width: auto !important;
+}
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-content-center {
+  align-content: center !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+.mb-5{
+  margin-bottom: 3rem !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.padding-y {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 991px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1199px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: center;
+    }
+    .container-fill-height{
+      height: 400px;
+    }
+  }

@@ -1,0 +1,49 @@
+.button:focus > .prochainement{
+    display: none;
+  }
+  .button:focus > .dot span{
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .dot span {
+    display: none;
+    width: 3px;
+    height: 3px;
+    margin: 0 2px;
+    background-color: #d6ae3f;
+    border-radius: 50%;
+  }
+  .dot span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .dot span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  @keyframes dots {
+    50%{
+      opacity: 0;
+      transform: scale(0.7) translateY(10px)
+    }
+  }
+
+.contact-anim:hover {
+  animation: thing 1s 1;
+}
+.legal-anim:hover {
+  animation: thing 1s 1;
+}
+@keyframes thing {
+  0%{transform: rotate(0deg)}
+  15%{transform: rotate(-2deg) translateX(-10px)}
+  20%{transform: rotate(3deg) translateX(10px)}
+  30%{transform: rotate(-4deg) translateX(-10px)}
+  40%{transform: rotate(4deg) translateX(10px)}
+  50%{transform: rotate(-4deg) translateX(-10px)}
+  60%{transform: rotate(4deg) translateX(10px)}
+  70%{transform: rotate(-3deg) translateX(-10px)}
+  85%{transform: rotate(2deg) translateX(10px)}
+  100%{transform: rotate(0deg)}
+}

@@ -33,4 +33,7 @@
     .container-fill-height{
       height: 400px;
     }
+    .text-price, .contenu {
+      text-align: center !important;
+    }
   }

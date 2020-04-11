@@ -8,6 +8,9 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
+  .dot {
+    border: 1px dotted transparent;
+  }
   .dot span {
     display: none;
     width: 3px;

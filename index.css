@@ -104,6 +104,7 @@ a:hover {
 .ligne {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .col-md-4 {
   flex: 0 0 33.333333%;

@@ -8,8 +8,11 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
+  .button:focus > .dot{
+    display: block;
+  }
   .dot {
-    border: 1px dotted transparent;
+    display: none;
   }
   .dot span {
     display: none;

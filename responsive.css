@@ -25,6 +25,11 @@
     }
   }
   @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: center;
+    }
     .col-md-6 {
       flex: 0 0 100%;
       max-width: 100%;
@@ -35,5 +40,8 @@
     }
     .text-price, .contenu {
       text-align: center !important;
+    }
+    .navigation {
+      padding: 0 !important;
     }
   }

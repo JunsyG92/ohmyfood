@@ -138,6 +138,7 @@ a:hover {
 /* DESIGN LA NOTE ENCHANTEE - SIZE - FONT */
 .bg-ne {
   background-color: #FCDFDB;
+  opacity: 1;
 }
 .font-note-enchantee {
   font-family: ZhiMangXing;
@@ -161,6 +162,7 @@ a:hover {
 /* DESIGN LE CHIC A LA FRANCAISE - SIZE - FONT */
 .bg-cf {
   background-color: #FFF5FE;
+  opacity: 1;
 }
 .font-chic-francaise {
   font-family: PlayfairDisplay;
@@ -186,6 +188,7 @@ a:hover {
 /* DESIGN LE DELICE DES PAPILLES - SIZE - FONT */
 .bg-dp {
   background-color: #F9F9F9;
+  opacity: 1;
 }
 .font-delice-papilles {
   font-family: DancingScript;
@@ -202,6 +205,7 @@ a:hover {
 /* DESIGN LA PALETTE DU GOÛT - SIZE - FONT */
 .bg-pg {
   background-color: #FDFFFD;
+  opacity: 1;
 }
 .font-palette-gout {
   font-family: KaushanScript;
@@ -299,27 +303,22 @@ a:hover {
   border-radius: 0.25rem;
   margin: 15px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  opacity: 1;
 }
 
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
-  transform: scale(1);
-  transition: transform 300ms;
 }
 .card-effect {
   transform: scale(1);
-  transition: transform 300ms;
+  transition: transform 500ms, opacity 500ms;
 }
 .card-title {
   font-size :2.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.card:hover .card-effect {
-  transform: scale(1.1);
-  transition: transform 300ms;
 }
 .card-header {
   padding: 0.75rem 1.25rem;
@@ -398,50 +397,4 @@ a:hover {
 }
 .margin-bottom-1{
   margin-bottom: 1.5rem !important;
-}
-
-/*
-* Soulignement paramètres generaux
-*/
-
-.s-titre {
-  color: inherit;
-  text-decoration: none;
-  background-size: 0 30%;
-  transition: background-size .3s;
-} 
-.s-titre:hover {
-  background-size: 100% 30%;
-}
-
-/*
-* Soulignement page Note enchantée
-*/
-.st-ne-1 {
-  background: linear-gradient(to right, #f0586279 0%, #f6916a79 100%) no-repeat left bottom / 0 10%;
-}
-/*
-* Soulignement page Chic à la Française
-*/
-.st-cf-1 {
-  background: linear-gradient(to right, #c7741279 0%, #c7741279 100%) no-repeat left bottom / 0 10%;
-}
-.st-cf-2 {
-  background: linear-gradient(to right, #a5679979 0%, #a5679979 100%) no-repeat left bottom / 0 10%;
-}
-.st-cf-3 {
-  background: linear-gradient(to right, #6e4ccc79 0%, #6e4ccc79 100%) no-repeat left bottom / 0 10%;
-}
-
-/*
-* Soulignement page délice des papilles
-*/
-.st-dp {
-  background: linear-gradient(to right, #0229dd79 0%, #0889fb79 100%) no-repeat left bottom / 0 10%;
-}
-/*
-* Soulignement page palette des gout
-*/
-.st-pg {
-  background: linear-gradient(to right, #3e923a79 0%, #beff7f79 50%) no-repeat left bottom / 0 10%;
 }

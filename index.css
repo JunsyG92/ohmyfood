@@ -62,13 +62,16 @@ body {
   height: 100%;
 }
 
-a, .logo {
+a, .logo, .button-ohmyfood {
   color: #fdcb46;
   text-decoration: none;
-  background-color: transparent;
 }
 a:hover {
   color: #d6ae3f;
+}
+h1, h2, h3, p {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .img-fluid
 {
@@ -128,7 +131,7 @@ a:hover {
 
 
 /* DESIGN OHMYFOOD - SIZE - FONT */
-.bg-ohmyfood {
+.bg-ohmyfood, .button-ohmyfood {
   background-color: #579c87;
 }
 .font-ohmyfood {
@@ -138,6 +141,7 @@ a:hover {
 /* DESIGN LA NOTE ENCHANTEE - SIZE - FONT */
 .bg-ne {
   background-color: #FCDFDB;
+  opacity: 1;
 }
 .font-note-enchantee {
   font-family: ZhiMangXing;
@@ -148,6 +152,7 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4.5rem;
+  color: #f05861 !important
 }
 .caveat-r {
   font-family: CaveatRegular;
@@ -161,11 +166,13 @@ a:hover {
 /* DESIGN LE CHIC A LA FRANCAISE - SIZE - FONT */
 .bg-cf {
   background-color: #FFF5FE;
+  opacity: 1;
 }
 .font-chic-francaise {
   font-family: PlayfairDisplay;
 }
 .ch-color{
+  color: #e0881d;
   background: -webkit-linear-gradient(left, #e0881d 0%, #8f5aff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -181,20 +188,23 @@ a:hover {
   color: #6e4ccc;
 }
 .ch-size {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 /* DESIGN LE DELICE DES PAPILLES - SIZE - FONT */
 .bg-dp {
   background-color: #F9F9F9;
+  opacity: 1;
 }
 .font-delice-papilles {
   font-family: DancingScript;
 }
 .dp-color{
-  background: -webkit-linear-gradient(left, #0229dd 0%, #0889fb 100%);
+  color: #0229dd;
+  background: -webkit-linear-gradient(left, #0c31d4 0%, #0e7fe2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4.5rem;
+  
 }
 .dp-menu-color{
   color: #0889fb;
@@ -202,11 +212,13 @@ a:hover {
 /* DESIGN LA PALETTE DU GOÛT - SIZE - FONT */
 .bg-pg {
   background-color: #FDFFFD;
+  opacity: 1;
 }
 .font-palette-gout {
   font-family: KaushanScript;
 }
 .pg-color{
+  color: #beff7f;
   background: -webkit-linear-gradient(left, #3e923a 0%, #beff7f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -230,6 +242,10 @@ a:hover {
   line-height: 1.2;
 }
 
+.display-titre {
+  font-size: 5vw
+}
+
 
 /*
 *     Button Design
@@ -238,12 +254,10 @@ a:hover {
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
-  color: #212529;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  background-color: transparent;
   border: 1px solid transparent;
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -252,10 +266,6 @@ a:hover {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.button-ohmyfood {
-  color: #fdcb46;
-  background-color: #579c87;
-}
 
 .button-ohmyfood:hover {
   color: #ffd96f;
@@ -299,7 +309,6 @@ a:hover {
   border-radius: 0.25rem;
   margin: 15px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  transition: opacity 300ms;
   opacity: 1;
 }
 
@@ -307,25 +316,15 @@ a:hover {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
-  transform: scale(1);
-  transition: transform 300ms;
 }
 .card-effect {
   transform: scale(1);
-  transition: transform 300ms;
+  transition: transform 500ms, opacity 500ms;
 }
 .card-title {
   font-size :2.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.card:hover{
-  transition: opacity 300ms;
-  opacity: .8;
-}
-.card:hover .card-effect {
-  transform: scale(1.1);
-  transition: transform 300ms;
 }
 .card-header {
   padding: 0.75rem 1.25rem;
@@ -340,18 +339,31 @@ a:hover {
 /*
 *     Justify content => Center / Between
 */
-.j_c-center {
+.justify-content-center {
   justify-content: center !important;
 }
 
-.j_c-between {
+.justify-content-between {
   justify-content: space-between !important;
 }
 
+
 /*
-*     Position fixe bottom
+*     Align center => Items / Content
 */
-.fixe-bottom {
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-content-center {
+  align-content: center !important;
+}
+
+/*
+*     Position fixed => Top / Bottom
+*/
+
+.fixed-bottom {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -363,7 +375,7 @@ a:hover {
 *     Text => Left / Center / Right
 */
 
-.t-center {
+.text-center {
   text-align: center !important;
 }
 .text-price {
@@ -378,9 +390,9 @@ a:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.margin-bottom-3{
+.margin-bottom{
   margin-bottom: 3rem !important;
 }
-.margin-bottom-1-5{
+.margin-bottom-1{
   margin-bottom: 1.5rem !important;
 }

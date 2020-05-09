@@ -8,8 +8,11 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
+  .button:focus > .dot{
+    display: block;
+  }
   .dot {
-    border: 1px dotted transparent;
+    display: none;
   }
   .dot span {
     display: none;
@@ -49,4 +52,59 @@
   70%{transform: rotate(-3deg) translateX(-10px)}
   85%{transform: rotate(2deg) translateX(10px)}
   100%{transform: rotate(0deg)}
+}
+
+/*
+* Effets sur les carte menu
+*/
+
+.card:hover .card-effect {
+  transform: scale(1.1);
+  transition: transform 500ms, opacity 500ms;
+  opacity: 0.7;
+}
+
+/*
+* Soulignement paramètres generaux
+*/
+
+.s-titre {
+  text-decoration: none;
+  background-size: 0 10%;
+  transition: background-size .3s;
+} 
+.s-titre:hover {
+  background-size: 100% 10%;
+}
+
+/*
+* Soulignement page Note enchantée
+*/
+.st-ne-1 {
+  background: linear-gradient(to right, #f05862 0%, #f6916a 100%) no-repeat left bottom / 0 10%;
+}
+/*
+* Soulignement page Chic à la Française
+*/
+.st-cf-1 {
+  background: linear-gradient(to right, #c77412 0%, #c77412 100%) no-repeat left bottom / 0 10%;
+}
+.st-cf-2 {
+  background: linear-gradient(to right, #a56799 0%, #a56799 100%) no-repeat left bottom / 0 10%;
+}
+.st-cf-3 {
+  background: linear-gradient(to right, #6e4ccc 0%, #6e4ccc 100%) no-repeat left bottom / 0 10%;
+}
+
+/*
+* Soulignement page délice des papilles
+*/
+.st-dp {
+  background: linear-gradient(to right, #0229dd 0%, #0889fb 100%) no-repeat left bottom / 0 10%;
+}
+/*
+* Soulignement page palette des gout
+*/
+.st-pg {
+  background: linear-gradient(to right, #3e923a 0%, #beff7f 50%) no-repeat left bottom / 0 10%;
 }

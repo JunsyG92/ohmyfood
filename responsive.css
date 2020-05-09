@@ -44,4 +44,7 @@
     .navigation {
       padding: 0 !important;
     }
+    .display-titre {
+      font-size: 10vw
+    }
   }
